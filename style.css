@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #111827;
+    color: white;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#home {
+    padding: 100px 50px;
+    position: relative;
+    min-height: 500px;
+}
+
+#home h2 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#home button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #38bdf8;
+    color: white;
+}
+
+#home button:hover {
+    background-color: #0ea5e9;
+}
+
+
+
+.home-photo {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    width: 400px;
+    height: 500px;
+}
+
+.home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+#about {
+    padding: 80px 50px;
+}
+
+#about h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+#about h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#about p {
+    max-width: 700px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+
+#skills {
+    padding: 80px 50px;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+#skills li {
+    padding: 10px 20px;
+    border: 1px solid #38bdf8;
+    border-radius: 5px;
+}
+
+#skills li:hover {
+    background-color: #38bdf8;
+    color: #111827;
+}
+
+#skills li.active {
+    background-color: #38bdf8;
+    color: #111827;
+}
+
+
+
+#experience {
+    padding: 80px 50px;
+}
+
+#experience h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+#experience ul {
+    list-style: none;
+}
+
+#experience li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 3px solid #38bdf8;
+}
+
+#experience li:hover {
+    background-color: #1f2937;
+}
+
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    nav div {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    nav p {
+        font-size: 18px;
+    }
+
+
+
+    #home {
+        padding: 70px 20px;
+        min-height: 700px;
+    }
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    #home p {
+        width: auto;
+        line-height: 1.6;
+    }
+
+
+
+    .home-photo {
+        top: 480px;
+        right: auto;
+        left: 20px;
+        width: 250px;
+        height: 300px;
+    }
+
+
+
+    #about {
+        padding: 60px 20px;
+    }
+
+    #about h3 {
+        font-size: 25px;
+    }
+
+
+
+    #skills {
+        padding: 60px 20px;
+    }
+
+    #skills ul {
+        flex-wrap: wrap;
+    }
+
+
+    /* EXPERIENCE */
+
+    #experience {
+        padding: 60px 20px;
+    }
+
+}
