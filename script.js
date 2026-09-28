@@ -2,7 +2,7 @@
 const tombolCV = document.querySelector("#home button");
 
 tombolCV.addEventListener("click", function() {
-    window.open("cv.pdf", "_blank");
+    window.open("2025_CV_Agustio Indra.pdf", "_blank");
 });
 
 
